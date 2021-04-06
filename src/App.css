@@ -1,0 +1,337 @@
+.menu{
+  width: 100%;
+  height: 75px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  border-bottom: 2px solid rgb(77, 77, 77, .2);
+
+  background: #fff;
+}
+
+.menu > a {
+
+  position: relative;
+
+  color: #34af23;
+
+  margin-right: 12px;
+}
+
+.menu > a img{
+  width: 30px;
+  position: absolute;
+  top: -6px;
+  right: 100px;
+}
+
+/*divs univers*/
+.container{
+  width: 90%;
+
+  position: relative;
+  left: 50%;
+  margin-left: -45%;
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*divs univers*/
+
+/*Topo*/
+.box-group-full{
+  width: 100%;
+
+  display: flex;
+
+  overflow: auto;
+}
+.box-group-full .box-p{
+  width: 100%;
+  min-width: 300px;
+
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 10px;
+
+  background: #fff;
+  padding: 20px;
+}
+.box-group-full .box-p h3{
+  color: rgb(15, 101, 160);
+}
+.box-group-full .box-p .sub-box{
+   display: flex; 
+   margin-bottom: 10px;
+}
+.box-group-full .box-p .sub-box > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+ }
+.box-group-full .box-p .sub-box > img{
+ width: 150px;
+ height: 150px;
+ object-fit: cover;
+ margin-right: 10px;
+}
+.box-group-full .box-p .box-btn{
+  width: 100%;
+  
+  display: flex;
+  justify-content: flex-end;
+}
+.box-group-full .box-p .box-btn button{
+  width: 100%;
+  max-width: 250px;
+
+  padding: 10px 20px;
+
+  background: rgb(15, 101, 160);;
+  border: none;
+  border-radius: 3px;
+
+  color: #fff;
+}
+/*Topo*/
+
+/*Perguntas*/
+.container .box-g{
+  width: 100%;
+
+  border-radius: 10px;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 10px;
+
+  background: #fff;
+
+  border-bottom: 4px solid rgb(77, 77, 77, .3);
+}
+.container .box-g > h3{
+  color: rgb(15, 101, 160);
+}
+.container .box-g form{
+  display: flex;
+  justify-content: space-between;
+}
+.container .box-g form > div{
+  width: 33%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+}
+.container .box-g form div > div{
+  width: 100%;
+}
+.container .box-g form label{
+  width: 100%;
+  padding-bottom: 10px;
+}
+.container .box-g form > div input[type="text"], select{
+  width: 80%;
+
+  padding: 10px 20px;
+
+  background: none;
+
+  border: 1px solid rgb(77, 77, 77, .2);
+}
+.container .box-g form .btn{
+  width: 40px;
+  height: 40px;
+
+  margin-top: 37px;
+
+  border: none;
+
+  background: rgb(15, 101, 160);
+
+  color: #fff;
+
+  padding: 10px;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+.container .box-g form .btn::after{
+  content: "🔍";
+  display: block;
+  margin: -10px;
+}
+/*Perguntas*/
+
+/*Aulas*/
+.container-aula{
+  width: 90%;
+
+  position: relative;
+  left: 50%;
+  margin-left: -45%;
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-aula > h3{
+  width: 100%;
+
+  margin-left: 50px;
+  margin-top: 25px;
+  margin-bottom: -30px;
+}
+.container-aula .aulas{
+  width: 100%;
+
+  border-radius: 10px;
+
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin: 10px;
+}
+.container-aula .aulas .card{
+  width: 100%;
+  min-width: 350px;
+  max-width: 265px;
+
+  background: #fff;
+
+  border-radius: 10px;
+
+  margin: 10px;
+
+}
+.container-aula .aulas .card img{
+  width: 100%;
+  height: 200px;
+
+  object-fit: cover;
+
+  border-radius: 10px  10px 0px 0px;
+}
+.container-aula .aulas .card .discr{
+  width: 100%;  
+  padding: 10px;
+
+}
+.container-aula .aulas .card .discr > button{
+  width: 92%;
+
+  padding: 10px 20px;
+
+  margin-top: 25px;
+
+  border: 1px solid rgb(15, 101, 160);
+
+  color: rgb(15, 101, 160);
+
+  background: none;
+
+  cursor: pointer;
+}
+.container-aula a{
+  text-decoration: none;
+
+  color: orange;
+
+  display: block;
+}
+/*Aulas*/
+
+/*Ajustes*/
+@media(max-width: 1500px){
+  .container-aula .aulas .card{
+    width: 100%;
+    min-width: 265px;
+    max-width: 265px;
+  
+    background: #fff;
+  
+    border-radius: 10px;
+  
+    margin: 10px;
+  
+  }
+}
+/*Ajustes*/
+/*Mobile*/
+@media(max-width: 500px){
+  .container .box-g form{
+    display: block;
+  }
+  .container .box-g form > div{
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 10px;
+  }
+  .container .box-g form .btn{
+    width: 100%;    
+  }
+  
+  .container-aula .aulas{
+    width: 100%;
+  
+    border-radius: 10px;
+  
+    padding: 20px;
+  
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+    overflow: auto;
+  
+    margin: 10px;
+  }
+
+  .container-aula a{
+    display: none;
+  }
+
+  .box-group-full .box-p .box-btn button{
+    width: 100%;
+    max-width: 100%;
+  
+    padding: 10px 20px;
+  
+    background: rgb(15, 101, 160);;
+    border: none;
+    border-radius: 3px;
+  
+    color: #fff;
+  }
+
+  .container .box-g form .btn::after{
+    content: "Pesquisar...";
+    display: block;
+    margin: -10px;
+  }
+}
+/*Mobile*/
